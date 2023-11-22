@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+/* :root , html */
+:root{
+    font-family: 'Poppins', sans-serif;
+    font-size : 62.5%;
+    /* color : #2f3640; */
+    color : white;
+}
+
+/* styling html basic elements  */
+ul li{
+    list-style: none;
+}
+
+p,li{
+    font-size: 1.6rem;
+    margin-bottom : .5em;
+    letter-spacing: .020em;
+}
+h1,h2,h3{
+    letter-spacing: .015em;
+    margin-bottom : .3em
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ##################### utility classes ############### */
+
+.container{
+    max-width : 1200px;
+    width : 85%;
+    margin : auto;
+}
+.blue{
+    color : #40739e;
+}
+.white{
+    color : white;
+}
+.bg-blue{
+    background-color: #40739e;
+}
+.black{
+    color : #2f3640;
+}
+.fw-400{
+    font-weight : 400;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-300{
+    font-weight: 300;
+}
+.text-center{
+    text-align: center;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+
+.lg-heading{
+    font-size: 5.2rem;
+}
+.md-heading{
+    font-size: 2.8rem;
+}
+.small-text{
+    font-size: 1.4rem;
+}
+.normal-text{
+    font-size: 1.6rem;
+}
+
+.primary-btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: .8em 2.8em;
+    border-radius : 0.5rem;
+}
+
+/* ###################### my styling begins here ############# */
+body{
+    width : 100%;
+    height : 100vh;
+    background-image:linear-gradient(180deg , rgba(0,0,0 , .65) , rgba(0,0,0 , .7) , rgba(0,0,0 , .8)) , url("./images/img1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+}
+
+.nav-bar{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5em 0;
+}
+
+.nav-items{
+    display: flex;
+    gap : 2rem;
+    align-items: center;
+}
+
+.main-content{
+    /* border: 2px solid red; */
+    width : 70%;
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50% , -50%);
+    background : linear-gradient(rgba(0,0,0,.1) , rgba(0,0,0,.1) , rgba(0,0,0,.1));
+}
+
+.main-content p{
+    line-height: 2.8rem;
+    word-spacing: .2rem;
+}
+.main-content .btns{
+    /* border: 2px solid red; */
+    width : 25%;
+    margin : auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+   
+}
+.main-content button{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .015em;
+
+}
+@media (max-width : 768px){
+    :root{
+        font-size: 7.8px;
+    }
+    .nav-bar{
+        /* border: 2px solid red; */
+        flex-direction: column;
+    }
+    .nav-items{
+        /* border: 2px solid green; */
+        width : 100%;
+        /* text-align: center; */
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 1rem;
+    }
+
+    .main-content{
+        width : 90%;
+    }
+
+    .main-content p{
+        /* border: 2px solid red; */
+        width : 100%;
+    }
+    .main-content .btns{
+        width : 85%;
+    }
+}
+
+
+
